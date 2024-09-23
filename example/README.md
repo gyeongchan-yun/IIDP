@@ -103,6 +103,5 @@ InfiniBand (IB) bandwidth: 100Gbps
 
 ## PyTorch Examples
 - [ImageNet](imagenet/)
-- [ViT](vit/)
 - [Faster-R-CNN](faster_r_cnn/)
 - [GNMT](gnmt/)
