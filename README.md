@@ -69,4 +69,4 @@ python setup.py install
 Refer to [README.md](example/imagenet/resnet50_quickstart/) in ```example/imagenet/resnet50_quickstart/``` directory.
 
 ## Run IIDP
-Refer to [README.md](example/) in ```examples/``` directory.
+Refer to [README.md](example/) in ```example/``` directory.

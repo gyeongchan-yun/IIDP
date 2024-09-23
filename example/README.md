@@ -74,22 +74,22 @@ InfiniBand (IB) bandwidth: 100Gbps
     Intra-node
     ```
     # node1 (main node)
-    cd $IIDP_HOME/examples/common
+    cd $IIDP_HOME/example/common
     ./profiler/comm/scripts/get_comm_profile_data.sh 0 1 node1 15750000000 12500000000 comm_profile_data
     ```
 
     Inter-node
     ```
     # node1 (main node)
-    cd $IIDP_HOME/examples/common
+    cd $IIDP_HOME/example/common
     ./profiler/comm/scripts/get_comm_profile_data.sh 0 2 node1 15750000000 12500000000 comm_profile_data
 
     # node2
-    cd $IIDP_HOME/examples/common
+    cd $IIDP_HOME/example/common
     ./profiler/comm/scripts/get_comm_profile_data.sh 1 2 node1 15750000000 12500000000 comm_profile_data
     ```
 
-    Make sure that result on node1 exists at ```examples/common/comm_profile_data```
+    Make sure that result on node1 exists at ```example/common/comm_profile_data```
     ```
     comm_profile_data/
         ├── inter_comm_profile_data.txt
@@ -98,7 +98,7 @@ InfiniBand (IB) bandwidth: 100Gbps
 
    Send ```comm_profile_data/``` to ```node2``` so that result should be placed on node1 and node2
    ```
-   scp -r comm_profile_data node2:$IIDP_HOME/examples/common
+   scp -r comm_profile_data node2:$IIDP_HOME/example/common
    ```
 
 ## PyTorch Examples
